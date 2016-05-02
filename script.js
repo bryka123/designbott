@@ -15,7 +15,7 @@ module.exports = new Script({
         prompt: (bot) => bot.say('I am getting smarter day be day. Please check back with me again.'),
         receive: (bot) => {
             return bot.say('Hi! I\'m  Botu')
-                .then(() => 'I LOVE YOU');
+                .then(() => 'askName');
         }
     },
 
