@@ -5,9 +5,15 @@ const Script = require('smooch-bot').Script;
 
 const scriptRules = require('./script.json');
 
+function wait(ms) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
+}
+
 module.exports = new Script({
     processing: {
-        //prompt: (bot) => bot.say('Beep boop...'),
+        //prompt: (bot) => bot.say('Processing...'),
         receive: () => 'processing'
     },
 
@@ -15,16 +21,6 @@ module.exports = new Script({
         receive: (bot) => {
             return bot.say(`Hello! Please choose your language. Bonjour ! Choisissez votre langue, s'il vous plait.\n%[English](postback:english) %[Français](postback:francais)`)
                 .then(() => 'speak');
-        }
-    },
-
-    askName: {
-        prompt: (bot) => bot.say('What\'s your name?'),
-        receive: (bot, message) => {
-            const name = message.text;
-            return bot.setProp('name', name)
-                 .then(() => bot.say(`Great! Good to know you ${name}`))
-                .then(() => 'speak');  
         }
     },
 
@@ -54,7 +50,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say(`I didn't understand that.`).then(() => 'speak');
+                    return bot.say(`[EN] Sorry, I didn\'t understand what you said. Remember, I\'m just a bot.\n[EN] Say START to start over.\n[FR] Désolé, je n'ai pas compris. Rappelez-vous, je ne suis qu'un bot.\n[FR] Dites DEMARRER pour relancer la conversation.` ).then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
@@ -65,9 +61,11 @@ module.exports = new Script({
                     line = line.trim();
                     p = p.then(function() {
                         console.log(line);
-                        return bot.say(line);
+                        return wait(50).then(function() {
+                            return bot.say(line);
+                        });
                     });
-                })
+                });
 
                 return p.then(() => 'speak');
             }
