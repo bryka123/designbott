@@ -14,7 +14,7 @@ module.exports = new Script({
     start: {
         prompt: (bot) => bot.say('I am getting smarter day be day. Please check back with me again.'),
         receive: (bot) => {
-            return bot.say(`Hello! Please choose your language. Bonjour ! Choisissez votre langue, s'il vous plait.\n%[English](postback:english) %[Français](postback:francais)`)
+            return bot.say(`Hello! Please choose your language. Bonjour ! Choisissez votre langue, s'il vous plait.\n%[English](postback:BOT) %[Français](postback:francais)`)
                 .then(() => 'askName');
         }
     },
