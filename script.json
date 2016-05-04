@@ -7,7 +7,7 @@
     "DISCONNECT": "Roger that, EstherBot is back.",
     "ENGLISH": "Roger that, EstherBot is back.",
     "LEARN ABOUT ESTHER": "Learn about this thing.",
-    "MOREA": "Learn about this thing.",
+    "MORE_ROOMS": "Learn about this thing.",
     "MOREAA": "Select Room \n%[Nursery](postback:nursery) %[Kids Bedroom](postback:kidsbedroom) %[Studio](postback:studio) %[More rooms](postback:moreb)",
     "MOREB": "Select Room \n%[Office](postback:office) %[Outdoor](postback:outdoor) %[Dorm](postback:Dorm)"
 }
