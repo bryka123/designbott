@@ -7,6 +7,6 @@
     "DISCONNECT": "Roger that, EstherBot is back.",
     "ENGLISH": "Roger that, EstherBot is back.",
     "LEARN ABOUT ESTHER": "Learn about this thing.",
-    "MOREE": "%[Nursery](postback:nursery) %[Kids Bedroom](postback:kidsbedroom) %[Studio](postback:studio) %[More rooms](postback:moreb)",
-    "MOREB": "%[Office](postback:office) %[Outdoor](postback:outdoor) %[Dorm](postback:Dorm)"
+    "MOREA": "Select Room \n%[Nursery](postback:nursery) %[Kids Bedroom](postback:kidsbedroom) %[Studio](postback:studio) %[More rooms](postback:moreb)",
+    "MOREB": "Select Room \n%[Office](postback:office) %[Outdoor](postback:outdoor) %[Dorm](postback:Dorm)"
 }
