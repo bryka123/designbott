@@ -19,7 +19,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say(`Hello! Please choose your language. Bonjour ! Choisissez votre langue, s'il vous plait.\n%[More rooms](postback:more_rooms) %[Français](postback:francais)`)
+            return bot.say(`Hello! Please choose your language. Bonjour ! Choisissez votre langue, s'il vous plait.\n%[Bot](postback:bot) %[Français](postback:francais)`)
             //return bot.say(`Select Room \n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:english)`)
                 .then(() => 'speak');
         }
