@@ -19,7 +19,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say(`Hello!\n I'm Izzy thanks for stopping by, I'm going to ask a few questions to answer your design questions.\n Lets begin, please tell me which room are we going to address?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`)
+            return bot.say(`Hello!\n I'm Izzy thanks for stopping by, I'm going to ask a few questions to answer your design questions.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`)
                 .then(() => 'speak');
         }
     },
