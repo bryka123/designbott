@@ -32,7 +32,7 @@ class BetterSmoochApiBot extends SmoochApiBot {
 }
 
 const name = 'SmoochBot';
-const avatarUrl = 'https://s.gravatar.com/avatar/f91b04087e0125153623a3778e819c0a?s=80';
+const avatarUrl = 'https://raw.githubusercontent.com/bryka123/designbott/master/img/571cec214095f04c00336d56.jpg';
 const store = new SmoochApiStore({
     jwt
 });
