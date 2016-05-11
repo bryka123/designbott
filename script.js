@@ -50,7 +50,8 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say(`[EN] Sorry, I didn\'t understand what you said. Remember, I\'m just a bot.` ).then(() => 'speak');
+                    return bot.say(`[EN] Sorry, I didn\'t understand what you said. Remember, I\'m just a bot.  [Smooch track:@"start"]` ).then(() => 'speak');
+                   
                 }
 
                 var response = scriptRules[upperText];
