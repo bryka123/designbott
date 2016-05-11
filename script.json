@@ -2,20 +2,20 @@
     "MORE ROOMS": "%[Nursery](postback:nursery) %[Kids Bedroom](postback:kidsbedroom) %[Condo](postback:condo) \n%[Show more](postback:show_more)",
     "SHOW MORE": "%[Office](postback:office) %[Outdoor](postback:outdoor) ",
     
-    "OFFICE": "Great!\n Lets find about your design style, what do you like?\n %[More classic](postback:more_classic) %[In Between](postback:in_between) %[More Modern](postback:more_modern)",
-    "OUTDOOR": "Great!\n Lets find about your design style, what do you like?\n %[More classic](postback:more_classic) %[In Between](postback:in_between) %[More Modern](postback:more_modern)",
+    "OFFICE": "Office, Great!\n Lets find about your design style, what do you like?\n %[More classic](postback:more_classic) %[In Between](postback:in_between) %[More Modern](postback:more_modern)",
+    "OUTDOOR": "Outdoor, Great!\n Lets find about your design style, what do you like?\n %[More classic](postback:more_classic) %[In Between](postback:in_between) %[More Modern](postback:more_modern)",
     
-    "MORE CLASSIC": "I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
-    "IN BETWEEN": "I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
-    "MORE MODERN": "I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
+    "MORE CLASSIC": "More classic, I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
+    "IN BETWEEN": "In between, I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
+    "MORE MODERN": "More modern, I like it! Tell me about how you like furniture and decoration in your home. \n %[Less is more](postback:less_is_more) %[Balanced](postback:balanced) %[More is better](postback:more_is_better)",
     
-    "LESS IS MORE": "Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
-    "BALANCED": "Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
-    "MORE IS BETTER": "Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
+    "LESS IS MORE": "Less is more, Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
+    "BALANCED": "Balanced, Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
+    "MORE IS BETTER": "More is better, Love it! Now tell me about the color style your prefer. \n %[Clean & Neutral](postback:clean_&_neutral) %[Some color](postback:some_color) %[Bolder & brighter](postback:bolder_&_brighter)",
     
-    "CLEAN & NEUTRAL": "CLEAN & NEUTRAL - Send me a photo of your question",
-    "SOME COLOR": "SOME COLOR - Send me a photo of your question",
-    "BOLDER & BRIGHTER": "BOLDER & BRIGHTER - Send me a photo of your question",
+    "CLEAN & NEUTRAL": "Clean & Neutral, Please select at least 3 images to give us a sense of your questions.",
+    "SOME COLOR": "Clean & Neutral, Please select at least 3 images to give us a sense of your questions.",
+    "BOLDER & BRIGHTER": "Clean & Neutral, Please select at least 3 images to give us a sense of your questions.",
     
     "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
     "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
