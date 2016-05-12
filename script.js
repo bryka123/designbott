@@ -17,7 +17,17 @@ module.exports = new Script({
         receive: () => 'processing'
     },
 
-    start: {
+start: {
+        prompt: (bot) => bot.say('What\'s your name?'),
+        receive: (bot, message) => {
+            const name = message.text;
+            return bot.setProp('name', name)
+                .then(() => bot.say(`Great! I'll call you ${name}`))
+                .then(() => 'askName');
+        }
+    },
+    
+    askName: {
         receive: (bot) => {
             return bot.say(`Hello!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`)
                 .then(() => 'speak');
@@ -33,7 +43,7 @@ module.exports = new Script({
                 switch (upperText) {
                     case "CONNECT ME":
                         return bot.setProp("silent", true);
-                        Smooch.track("start");
+                        
                         //return Smooch.track("start");
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
