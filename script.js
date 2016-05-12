@@ -32,7 +32,8 @@ module.exports = new Script({
             function updateSilent() {
                 switch (upperText) {
                     case "CONNECT ME":
-                        return bot.setProp("silent", true);
+                        //return bot.setProp("silent", true);
+                        return Smooch.track("start");
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
                     default:
