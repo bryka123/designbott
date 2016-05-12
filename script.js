@@ -16,18 +16,22 @@ module.exports = new Script({
         //prompt: (bot) => bot.say('Processing...'),
         receive: () => 'processing'
     },
-
-start: {
+tart: {
+        receive: (bot) => {
+            return bot.say('Hi! I\'m Smooch Bot!')
+                .then(() => 'askName');
+                
+askName: {
         prompt: (bot) => bot.say('What\'s your name?'),
         receive: (bot, message) => {
             const name = message.text;
             return bot.setProp('name', name)
                 .then(() => bot.say(`Great! I'll call you ${name}`))
-                .then(() => 'askName');
+                .then(() => 'begin');
         }
     },
     
-    askName: {
+    begin: {
         receive: (bot) => {
             return bot.say(`Hello!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`)
                 .then(() => 'speak');
