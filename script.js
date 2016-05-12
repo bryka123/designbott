@@ -32,8 +32,9 @@ module.exports = new Script({
             function updateSilent() {
                 switch (upperText) {
                     case "CONNECT ME":
-                        //return bot.setProp("silent", true);
-                        return Smooch.track("start");
+                        return bot.setProp("silent", true);
+                        Smooch.track("start");
+                        //return Smooch.track("start");
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
                     default:
@@ -51,7 +52,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say(`[EN] Sorry, I didn\'t understand what you said. Remember, I\'m just a bot.  [Smooch track:@"start"]` ).then(() => 'speak');
+                    return bot.say(`[EN] Sorry, I didn\'t understand what you said. Remember, I\'m just a bot.  ` ).then(() => 'speak');
                    
                 }
 
