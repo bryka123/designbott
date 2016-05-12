@@ -16,11 +16,13 @@ module.exports = new Script({
         //prompt: (bot) => bot.say('Processing...'),
         receive: () => 'processing'
     },
-tart: {
+
+start: {
         receive: (bot) => {
             return bot.say('Hi! I\'m Smooch Bot!')
                 .then(() => 'askName');
-                
+        }
+    }, 
 askName: {
         prompt: (bot) => bot.say('What\'s your name?'),
         receive: (bot, message) => {
