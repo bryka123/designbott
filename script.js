@@ -23,7 +23,7 @@ module.exports = new Script({
         receive: (bot, message) => {
             const name = message.text;
             return bot.setProp('name', name)
-                .then(() => bot.say(`I'll call you ${name}! Hello!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`))
+                .then(() => bot.say(`I'll call you ${name}!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`))
                 .then(() => 'speak');
         }
     },
