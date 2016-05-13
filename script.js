@@ -13,17 +13,17 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say(`*Un robot inanimé posé sur une table* \n *Des larges yeux perplexes s'ouvrent à votre passage* \n Je suis le bot personnel de Maxime, un jeune-diplômé en communication et innovation, il m'a chargé de discuter à sa place. \n ![maxime](https://raw.githubusercontent.com/MaximeNialiv/EstherBot/master/img/maxime.jpg)`)
+            return bot.say('Hi! I\'m Smooch Bot!')
                 .then(() => 'askName');
         }
     },
 
     askName: {
-        prompt: (bot) => bot.say(`Puis-je connaître ton nom avant de commencer ?`),
+        prompt: (bot) => bot.say('What\'s your name?'),
         receive: (bot, message) => {
             const name = message.text;
             return bot.setProp('name', name)
-                .then(() => bot.say(` ${name}... C'est un joli nom ! \n Enfin, c'est ce que l'on m'a dit de dire. Je ne saurais juger^^'\n Ma conversation est un peu laborieuse, vous ne pouvez me répondre qu'au moyen des mots en capitales, allez-y parlez BOT pour voir :) \n`))
+                .then(() => bot.say(`I'll call you ${name}! Hello!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`))
                 .then(() => 'speak');
         }
     },
