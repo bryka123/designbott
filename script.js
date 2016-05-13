@@ -34,12 +34,7 @@ start: {
         }
     },
     
-      start: {
-        receive: (bot) => {
-            prompt: (bot) => bot.say(`Hello!\n I'm Dvira thanks for stopping by, I'm going to ask a few questions to answer to find your style.\n What room can we help you with?\n%[Living Room](postback:livingroom) %[Bedroom](postback:bedroom) %[Dining Room](postback:diningroom) %[More rooms](postback:more_rooms)`)
-                .then(() => 'speak');
-        }
-    },
+     
 
     speak: {
         receive: (bot, message) => {
