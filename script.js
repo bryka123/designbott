@@ -30,7 +30,7 @@ start: {
             const name = message.text.trim();
             bot.setProp('name', name);
             return bot.say(`I'll call you ${name}! Great!`)
-                .then(() => 'finish');
+                .then(() => 'begin');
         }
     },
     
