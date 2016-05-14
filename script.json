@@ -25,6 +25,6 @@
     "DISCONNECT": "Roger that, EstherBot is back.",
     "ENGLISH": "Roger that, EstherBot is back.",
     "LEARN ABOUT ESTHER": "Learn about this thing.",
-    "PAY":"[Ready to pay? Please provide a payment so we can help you out.](25.00)"
+    "PAY":"Ready to pay... \n[Please provide a payment so we can help you out](25.00)"
     
 }
